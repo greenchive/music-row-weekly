@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A weekly Nashville music-production briefing: dated deadlines, events worth showing up to, hiring signals, and 38 studios, labels and publishers worth approaching.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Music Row Weekly">
+<meta property="og:description" content="A weekly Nashville music-production briefing: dated deadlines, events worth showing up to, hiring signals, and 38 studios, labels and publishers worth approaching.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%9B%3C/text%3E%3C/svg%3E">
+<style>
+  :root{color-scheme:light dark}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Music Row Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ground:#E9E8E3; --surface:#F4F3EF; --raised:#FBFAF8;
+  --ink:#1B1E1B; --ink2:#484D47; --muted:#767B72;
+  --rule:#CAC9C2; --rule-strong:#A8A89F;
+  --signal:#A8341C; --amber:#9C6612; --go:#3F6349;
+  --wash:rgba(168,52,28,.07); --amber-wash:rgba(156,102,18,.10); --go-wash:rgba(63,99,73,.10);
+  --shadow:0 1px 0 rgba(27,30,27,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#141719; --surface:#1B1E21; --raised:#22262A;
+    --ink:#E9E7E1; --ink2:#B6B7B0; --muted:#8A8E87;
+    --rule:#303438; --rule-strong:#4A4F54;
+    --signal:#E4693F; --amber:#DFA23F; --go:#82AC8B;
+    --wash:rgba(228,105,63,.10); --amber-wash:rgba(223,162,63,.12); --go-wash:rgba(130,172,139,.12);
+    --shadow:0 1px 0 rgba(0,0,0,.30);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#141719; --surface:#1B1E21; --raised:#22262A;
+  --ink:#E9E7E1; --ink2:#B6B7B0; --muted:#8A8E87;
+  --rule:#303438; --rule-strong:#4A4F54;
+  --signal:#E4693F; --amber:#DFA23F; --go:#82AC8B;
+  --wash:rgba(228,105,63,.10); --amber-wash:rgba(223,162,63,.12); --go-wash:rgba(130,172,139,.12);
+  --shadow:0 1px 0 rgba(0,0,0,.30);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding-inline:20px; padding-block:0 72px}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:2px solid var(--ink); padding-block:34px 14px; margin-bottom:6px}
+.mast-rule{height:6px; background:repeating-linear-gradient(90deg,var(--ink) 0 14px,transparent 14px 20px); opacity:.5; margin-bottom:22px}
+h1{
+  font-family:"Archivo Black","Arial Black",sans-serif; font-weight:400;
+  font-size:clamp(38px,8vw,64px); line-height:.94; letter-spacing:-.022em;
+  margin:0 0 12px; text-wrap:balance; text-transform:uppercase;
+}
+.mast-meta{
+  display:flex; flex-wrap:wrap; gap:8px 20px; align-items:baseline;
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--muted);
+}
+.mast-meta b{color:var(--signal); font-weight:600}
+.standfirst{
+  font-size:17px; line-height:1.5; color:var(--ink2); max-width:62ch;
+  margin:18px 0 0;
+}
+
+/* ---------- section scaffolding ---------- */
+section{margin-top:52px}
+.sec-head{
+  display:flex; align-items:baseline; gap:14px;
+  border-bottom:1px solid var(--rule-strong); padding-bottom:7px; margin-bottom:20px;
+}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11px; font-weight:600;
+  letter-spacing:.17em; text-transform:uppercase; color:var(--signal);
+  white-space:nowrap;
+}
+.sec-head h2{
+  font-family:"Public Sans",sans-serif; font-weight:700; font-size:20px;
+  letter-spacing:-.01em; margin:0; flex:1; text-wrap:balance;
+}
+.count{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted);
+  letter-spacing:.06em; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.note{font-size:13.5px; color:var(--muted); margin:-8px 0 18px; max-width:68ch}
+
+/* ---------- ruled rows ---------- */
+.rows{display:flex; flex-direction:column}
+.row{
+  display:grid; grid-template-columns:118px 1fr auto; gap:6px 18px;
+  padding:14px 0; border-bottom:1px solid var(--rule); align-items:start;
+}
+.row:first-child{border-top:1px solid var(--rule)}
+.when{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:500;
+  letter-spacing:.03em; color:var(--ink2); font-variant-numeric:tabular-nums;
+  text-transform:uppercase; padding-top:2px;
+}
+.when small{display:block; color:var(--muted); font-size:11px; letter-spacing:.06em; margin-top:2px}
+.rbody{min-width:0}
+.rtitle{font-weight:600; font-size:15.5px; margin:0 0 2px; letter-spacing:-.005em}
+.rtitle a{color:inherit; text-decoration:none; border-bottom:1px solid var(--rule-strong)}
+.rtitle a:hover{color:var(--signal); border-bottom-color:var(--signal)}
+.rmeta{margin:0; font-size:14px; color:var(--ink2)}
+.rmeta em{color:var(--muted); font-style:normal}
+.hook{
+  margin:6px 0 0; font-size:13.5px; color:var(--ink2);
+  border-left:2px solid var(--signal); padding-left:10px;
+}
+
+/* ---------- chips ---------- */
+.chip{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; padding:3px 8px;
+  border:1px solid currentColor; white-space:nowrap; display:inline-block;
+}
+.c-urgent{color:var(--signal); background:var(--wash)}
+.c-soon{color:var(--amber); background:var(--amber-wash)}
+.c-open{color:var(--go); background:var(--go-wash)}
+.c-idle{color:var(--muted); border-color:var(--rule-strong)}
+
+/* ---------- doors ---------- */
+.group{margin-top:26px}
+.group-label{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink2);
+  background:var(--surface); border-left:3px solid var(--signal);
+  padding:7px 11px; margin-bottom:0;
+}
+.group-label span{display:block; color:var(--muted); font-weight:400; letter-spacing:0;
+  text-transform:none; font-family:"Public Sans",sans-serif; font-size:13px;
+  line-height:1.45; margin-top:5px; max-width:74ch}
+.door{padding:13px 11px; border-bottom:1px solid var(--rule)}
+.door:nth-child(even){background:var(--surface)}
+.dname{font-weight:600; font-size:15px; margin:0; letter-spacing:-.005em}
+.dname a{color:inherit; text-decoration:none; border-bottom:1px solid var(--rule-strong)}
+.dname a:hover{color:var(--signal); border-bottom-color:var(--signal)}
+.dhow{margin:3px 0 0; font-size:13.5px; color:var(--ink2)}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:60px; padding-top:18px; border-top:2px solid var(--ink);
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.06em;
+  color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 24px;
+}
+a{color:var(--signal)}
+
+@media (max-width:640px){
+  .row{grid-template-columns:1fr; gap:4px}
+  .when{padding-top:0}
+  .when small{display:inline; margin-left:8px}
+  .row>.chip{justify-self:start}
+}
+@media print{
+  @page{ size:Letter; margin:14mm 12mm; }
+  :root{ --ground:#fff; --surface:#F4F3EF; --ink:#111; --ink2:#333; --muted:#666;
+         --rule:#CFCEC8; --rule-strong:#9A9A92; --signal:#A8341C; --amber:#8A5A10; --go:#3F6349;
+         --wash:#F7ECE8; --amber-wash:#F7F0E2; --go-wash:#EDF2EE; }
+  body{ font-size:10.5pt; line-height:1.4; }
+  .wrap{ max-width:none; padding-inline:0; padding-block:0; }
+  h1{ font-size:34pt; }
+  .standfirst{ font-size:11pt; max-width:none; }
+  section{ margin-top:22pt; break-before:auto; }
+  .sec-head{ break-after:avoid; }
+  .sec-head h2{ font-size:14pt; }
+  .row, .door, .group-label{ break-inside:avoid; }
+  .group{ break-inside:auto; margin-top:14pt; }
+  .group-label{ break-after:avoid; }
+  .row{ padding:7pt 0; }
+  .door{ padding:6pt 8pt; }
+  .hook{ break-inside:avoid; }
+  .rtitle a, .dname a{ border-bottom:none; }
+  a{ text-decoration:none; }
+  .rtitle a::after, .dname a::after{ content:""; }
+  footer{ margin-top:22pt; }
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+:focus-visible{outline:2px solid var(--signal); outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <h1>Music Row<br>Weekly</h1>
+    <div class="mast-meta">
+      <span>Nashville · music production</span>
+      <span>Week of <b id="weekof">—</b></span>
+      <span>Refreshed <b id="refreshed">—</b></span>
+    </div>
+  </header>
+  <div class="mast-rule"></div>
+
+  <p class="standfirst">Posted jobs are the smallest part of how this industry hires. The ladder is runner &rarr; assistant engineer &rarr; engineer, and those seats go to someone the room already knows. So this page leads with dated things that expire and people worth knowing, and puts the listings last.</p>
+
+  <main id="app"></main>
+
+  <footer>
+    <span>Music Row Weekly</span>
+    <span>Rebuilt every Monday</span>
+    <span id="foot-date">—</span>
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   DATA — the weekly refresh rewrites this block and nothing else.
+   Dates are ISO. Status vocabulary: new | emailed | replied | met | applied | dead
+   ============================================================ */
+const DATA = {
+  refreshed: "2026-09-15",
+
+  deadlines: [
+    { date: "2026-10-30", label: "AES Show Nashville", detail: "Oct 30 – Nov 1, Gaylord Opryland Resort. Workshops, studio tours, research sessions, networking events.", url: "https://aesshow.com/", tag: "Register + ask about volunteer crew" },
+    { date: "2026-12-15", label: "Grammy U Mentorship Program", detail: "Six months paired with a Recording Academy voting or professional member. Applications open Fall 2026. Requires Grammy U membership first.", url: "https://www.grammy.com/membership/grammy-u/", tag: "⚠️ Exact close date unconfirmed — verify at grammyu@grammy.com", approx: true },
+    { date: "2027-03-01", label: "Warner Music Emerging Talent Associate — Summer 2027", detail: "Nashville is a placement city (511 Union St). Part-time 20–25 hrs/wk, hybrid, $17.00–$18.42/hr, 20+ department placements. Summer applications expected to open around March 2027.", url: "https://www.wmg.com/careers", tag: "⚠️ Opening date estimated from prior cycles", approx: true },
+    { date: "2027-05-01", label: "UMG early career programs", detail: "Eligibility runs to graduation between Spring 2026 and Fall 2028 — he qualifies now and after. Nashville is a designated hub city.", url: "https://www.umusiccareers.com/earlycareerprograms", tag: "Rolling by cohort — check monthly" }
+  ],
+
+  events: [
+    { date: "2026-10-30", label: "AES Show Nashville 2026", detail: "Gaylord Opryland. Three days of workshops, studio tours and networking, in town.", url: "https://aesshow.com/" },
+    { date: "recurring", label: "AES Nashville Section meetings", detail: "One of the society's most active chapters — technical meetings, facility tours, student hangs, a student mixing competition, and the AudioMasters Benefit Golf Tournament. Student attendance is the point of half of them.", url: "https://nashville.aessections.org/events/" },
+    { date: "recurring", label: "Grammy U Nashville", detail: "SoundChecks with touring artists, In The Mix networking nights, Up Close & Personal sessions. Nashville was the pilot city for the program.", url: "https://www.grammy.com/membership/grammy-u/" },
+    { date: "recurring", label: "NSAI workshops and chapter nights", detail: "Songwriter-side, but it is where the writers he will eventually record are standing.", url: "https://www.nashvillesongwriters.com/calendar/chapters" },
+    { date: "recurring", label: "HOME for Music", detail: "Coworking and community on the Nashville music scene. Their own pitch: the best Nashville music jobs are not posted online. Memberships from $99/quarter, free tours.", url: "https://homeformusic.org/" }
+  ],
+
+  signals: [
+    { headline: "Live Nation is staffing a new Nashville venue, The Truth, from scratch",
+      hook: "Twelve-plus roles posted together including Production Runner, Audio Tech, Video Tech, Stage Manager and Production Coordinator. A venue opening hires a whole crew at once and takes people with no venue history, which almost nothing else does.",
+      as_of: "2026-09-14" },
+    { headline: "AES brings its flagship show to Nashville Oct 30 – Nov 1",
+      hook: "Conferences need local crew and local studios host tours during show week. Two separate ways in, both of which need asking now rather than in October.",
+      as_of: "2026-09-15" },
+    { headline: "Sony's The Merch Collective is hiring broadly in Nashville",
+      hook: "Production Coordinator, Tour Manager, Account Coordinator and Ops all posted inside a few weeks. A team scaling that fast keeps hiring past what it advertises — worth a direct note even for roles not listed.",
+      as_of: "2026-09-14" }
+  ],
+
+  doors: [
+    { group: "Studios — the runner to assistant-engineer ladder",
+      note: "These seats are almost never posted. The move is a short, specific email to the studio manager, then showing up when they say yes to anything.",
+      items: [
+        { name: "Ocean Way Nashville", how: "Owned by Belmont and used for student sessions. If he has not already worked a session here, this is the closest door in the city.", url: "https://www.belmont.edu/curb/" },
+        { name: "Historic RCA Studio B", how: "Operated in partnership with Belmont. Student involvement runs through the university, not a public application." },
+        { name: "Blackbird Studio", how: "Nine rooms, the largest API Legacy console in the world. Also runs The Blackbird Academy — an alumni path in as well as a client path.", url: "https://blackbirdstudio.com/" },
+        { name: "Sound Emporium", how: "Open since 1964, Cowboy Jack Clement's room. Two studios, steady session traffic." },
+        { name: "RCA Studio A", how: "Dave Cobb's room. Very small crew, so a seat here is rare and worth a standing check-in." },
+        { name: "Dark Horse Recording", how: "Franklin. Residential complex, multiple rooms, long sessions that need runners." },
+        { name: "Sputnik Sound", how: "Vance Powell's studio. Indie and rock side of town." },
+        { name: "The Tracking Room", how: "Large-format tracking, orchestral and full-band dates." },
+        { name: "Addiction Sound Studios", how: "Rock-leaning, active session calendar." },
+        { name: "Southern Ground Nashville", how: "Historic room on Belmont's side of town." },
+        { name: "Welcome to 1979", how: "All-analog, tape, and an on-site cutting lathe. Runs workshops — a way in that does not require knowing anyone first." },
+        { name: "Castle Recording Studios", how: "Franklin. Residential, historic building." },
+        { name: "The Sound Kitchen", how: "Franklin. Multi-room complex, high volume." },
+        { name: "Starstruck Studios", how: "Music Row, full-service." },
+        { name: "County Q", how: "Mixing and tracking, heavily used by indie artists — a realistic first credit." }
+      ] },
+
+    { group: "Labels with Nashville offices",
+      note: "Intern programs are structured and dated. Applying is necessary but not sufficient — pair every application with one human contact.",
+      items: [
+        { name: "Universal Music Group Nashville", how: "Early career programs require graduation between Spring 2026 and Fall 2028. Nashville is a designated hub.", url: "https://www.umusiccareers.com/earlycareerprograms" },
+        { name: "Sony Music Nashville", how: "Runs summer internships starting late May. Currently hiring an A&R Analyst and a Production Coordinator." },
+        { name: "Warner Music Nashville", how: "511 Union Street. The Emerging Talent Associate program places in Nashville across 20+ departments.", url: "https://www.wmg.com/careers" },
+        { name: "Big Machine Label Group", how: "Independent, Nashville-headquartered, runs its own internships." },
+        { name: "Curb Records", how: "Mike Curb funded Belmont's Curb College. The strongest name-recognition door he has." },
+        { name: "BMG Nashville", how: "Label and publishing under one roof." },
+        { name: "Concord Nashville", how: "Label group plus a large publishing catalog." }
+      ] },
+
+    { group: "Publishers and performing rights organizations",
+      note: "Publishers sit upstream of every session. Knowing song pluggers is how a young engineer learns which records are about to be made.",
+      items: [
+        { name: "BMI Nashville", how: "Belmont runs the BMI Catalog Cast Program — a selective semester inside BMI's Music Row offices, weekly with industry staff. Ask Curb College whether graduating seniors are eligible." },
+        { name: "ASCAP Nashville", how: "Member events and writer nights, many open to students." },
+        { name: "SESAC", how: "Smaller affiliate roster, Nashville-headquartered." },
+        { name: "Warner Chappell Nashville", how: "Writing rooms attached — rooms need engineers." },
+        { name: "Sony Music Publishing Nashville", how: "Largest catalog in town." },
+        { name: "Big Loud", how: "Label and publisher, aggressive recent growth." },
+        { name: "Round Hill Music", how: "Catalog-driven, smaller Nashville team." }
+      ] },
+
+    { group: "Live and venue production — hiring right now",
+      note: "The fastest paid entry into production work in this city, and the least gatekept. Nights and weekends, which is compatible with a final semester.",
+      items: [
+        { name: "Live Nation — The Truth", how: "New venue staffing a full crew: Production Runner, Audio Tech, Video Tech, Stage Manager, Production Coordinator, Backstage Experience Coordinator.", url: "https://homeformusic.org/nashville-music-industry-jobs" },
+        { name: "Brooklyn Bowl Nashville", how: "Runner posted. Live Nation venue, so it connects to the rest of their Nashville staffing." },
+        { name: "Ryman Auditorium / Opry Entertainment", how: "House crew and production staff. Union-adjacent and competitive, worth a standing application." },
+        { name: "Marathon Music Works", how: "Mid-size independent room, regular touring dates." },
+        { name: "Exit/In and The Basement East", how: "Small rooms where a beginner actually gets hands on a console." }
+      ] },
+
+    { group: "Community and membership — cheap ways to be in the room",
+      note: "None of these is a job. All of them are how the jobs get heard about first.",
+      items: [
+        { name: "AES Nashville Section", how: "Free or low-cost student involvement. Facility tours are the single best way to see inside studios that will not answer a cold email.", url: "https://nashville.aessections.org/" },
+        { name: "Recording Academy Nashville Chapter", how: "Runs its own internships and was recruiting students for fall 2026.", url: "https://www.recordingacademy.com/" },
+        { name: "Grammy U", how: "$50 for all four years, student-only. Mentorship, SoundChecks, private job boards.", url: "https://www.grammy.com/membership/grammy-u/join/" },
+        { name: "HOME for Music", how: "Coworking and community from $99/quarter, free tours. Explicitly built around unposted jobs.", url: "https://homeformusic.org/" }
+      ] }
+  ],
+
+  warm: [
+    { name: "Ocean Way Nashville is Belmont-owned",
+      detail: "The university owns a working commercial studio and uses it for student sessions. Most students treat it as a classroom. Treating it as a first professional credit and a source of references is the difference." },
+    { name: "Curb College career development covers graduates, not just students",
+      detail: "One-on-one meetings are offered to graduates as well as enrolled students, plus weekly on-campus workshops led by working industry professionals. Worth booking a standing appointment now rather than in April.",
+      url: "https://www.belmont.edu/curb/career-development.html" },
+    { name: "Handshake — Belmont's internal board",
+      detail: "Curb College posts hundreds of internships a semester there that never reach a public job board. He has access; nobody outside does.",
+      url: "https://www.belmont.edu/curb/career-development.html" },
+    { name: "1,300+ Curb College graduates across the industry",
+      detail: "Alumni run from tour buses to C-suites, and the college claims a 98% first-destination outcome rate. The alumni directory is the highest-leverage and least-used asset he has. Ten specific names beat a hundred cold emails.",
+      url: "https://www.belmont.edu/curb/alumni-success.html" },
+    { name: "The BMI Catalog Cast Program",
+      detail: "A Belmont-exclusive semester inside BMI's Music Row offices — publishing, song plugging, creative direction, weekly with industry staff. Selective, and the kind of thing worth asking about before the last semester starts." },
+    { name: "Geography is a real advantage",
+      detail: "Curb College is one block from Music Row. Students walk to internships. Any door on this page is a walk, not a commute — which makes 'can I come by for fifteen minutes' a reasonable ask." }
+  ],
+
+  openings: [
+    { role: "Production Runner — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Assistant--The-Truth_JR-92286-2" },
+    { role: "Audio Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Audio-Tech--The-Truth_JR-92314" },
+    { role: "Video Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Video-Tech--The-Truth_JR-92315" },
+    { role: "Production Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Coordinator--The-Truth_JR-92311" },
+    { role: "Stage Manager — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Stage-Manager--The-Truth_JR-92312-1" },
+    { role: "Backstage Experience Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Backstage-Experience-Coordinator--The-Truth_JR-92313" },
+    { role: "Runner — Brooklyn Bowl Nashville", org: "Live Nation", cat: "Production", posted: "2026-09-08",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Runner---Brooklyn-Bowl-Nashville_JR-92904" },
+    { role: "LN Concerts — Production Runner", org: "Live Nation", cat: "Production", posted: "2026-07-15",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/LN-Concerts--Production-Runner_JR-87377" },
+    { role: "Production Runner", org: "Live Nation", cat: "Production", posted: "2026-06-20",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Runner_JR-49480" },
+    { role: "Coordinator, Production — The Merch Collective", org: "Sony Music", cat: "Production", posted: "2026-08-25",
+      url: "https://careers.sonymusic.com/jobs/8728599002" },
+    { role: "A&R Analyst", org: "Sony Music Nashville", cat: "A&R", posted: "2026-07-01",
+      url: "https://careers.sonymusic.com/jobs/8604918002" }
+  ],
+  openings_source: { label: "HOME for Music Nashville job board", url: "https://homeformusic.org/nashville-music-industry-jobs", total: 53, updated: "2026-09-14" }
+};
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const today = new Date();
+const dayMs = 86400000;
+const parse = iso => { const [y,m,d] = iso.split("-").map(Number); return new Date(y, m-1, d); };
+const daysTo = iso => Math.round((parse(iso) - today) / dayMs);
+const fmt = iso => parse(iso).toLocaleDateString("en-US", { month:"short", day:"numeric" });
+const fmtLong = iso => parse(iso).toLocaleDateString("en-US", { month:"long", day:"numeric", year:"numeric" });
+
+function urgency(days){
+  if (days < 0)  return { cls:"c-idle",   text:"Passed" };
+  if (days <= 14) return { cls:"c-urgent", text: days + " day" + (days===1?"":"s") };
+  if (days <= 45) return { cls:"c-soon",   text: days + " days" };
+  return { cls:"c-open", text: days + " days" };
+}
+
+function link(text, url){
+  return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text);
+}
+
+function secHead(eyebrow, title, count){
+  return `<div class="sec-head"><span class="eyebrow">${esc(eyebrow)}</span>
+    <h2>${esc(title)}</h2>${count ? `<span class="count">${esc(count)}</span>` : ""}</div>`;
+}
+
+function render(){
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+  document.getElementById("weekof").textContent =
+    monday.toLocaleDateString("en-US", { month:"short", day:"numeric", year:"numeric" });
+  document.getElementById("refreshed").textContent = fmtLong(DATA.refreshed);
+  document.getElementById("foot-date").textContent = "Data as of " + fmtLong(DATA.refreshed);
+
+  let h = "";
+
+  /* --- deadlines --- */
+  const dl = [...DATA.deadlines].sort((a,b) => parse(a.date) - parse(b.date));
+  h += `<section>${secHead("01 / Closing", "Windows that expire", dl.length + " tracked")}
+    <div class="rows">` +
+    dl.map(d => {
+      const u = urgency(daysTo(d.date));
+      return `<div class="row">
+        <div class="when">${esc(fmt(d.date))}${d.approx ? "<small>approx</small>" : ""}</div>
+        <div class="rbody">
+          <p class="rtitle">${link(d.label, d.url)}</p>
+          <p class="rmeta">${esc(d.detail)}</p>
+          ${d.tag ? `<p class="hook">${esc(d.tag)}</p>` : ""}
+        </div>
+        <span class="chip ${u.cls}">${esc(u.text)}</span>
+      </div>`;
+    }).join("") + `</div></section>`;
+
+  /* --- events --- */
+  h += `<section>${secHead("02 / Rooms", "Where to physically be")}
+    <p class="note">Half of this industry's hiring happens because someone was standing there. Recurring items have no deadline, which is exactly why they get skipped.</p>
+    <div class="rows">` +
+    DATA.events.map(e => {
+      const rec = e.date === "recurring";
+      const u = rec ? { cls:"c-open", text:"Ongoing" } : urgency(daysTo(e.date));
+      return `<div class="row">
+        <div class="when">${rec ? "Recurring" : esc(fmt(e.date))}</div>
+        <div class="rbody">
+          <p class="rtitle">${link(e.label, e.url)}</p>
+          <p class="rmeta">${esc(e.detail)}</p>
+        </div>
+        <span class="chip ${u.cls}">${esc(u.text)}</span>
+      </div>`;
+    }).join("") + `</div></section>`;
+
+  /* --- signals --- */
+  h += `<section>${secHead("03 / Signal", "Reasons to email someone this week")}
+    <p class="note">Not industry news. Each of these is a specific, current change that gives a cold email a real opening line.</p>
+    <div class="rows">` +
+    DATA.signals.map(s => `<div class="row">
+      <div class="when">${esc(fmt(s.as_of))}</div>
+      <div class="rbody">
+        <p class="rtitle">${esc(s.headline)}</p>
+        <p class="hook">${esc(s.hook)}</p>
+      </div>
+      <span class="chip c-soon">Act now</span>
+    </div>`).join("") + `</div></section>`;
+
+  /* --- doors --- */
+  const total = DATA.doors.reduce((n,g) => n + g.items.length, 0);
+  h += `<section>${secHead("04 / Doors", "The target list", total + " organizations")}
+    <p class="note">Grouped by how the door actually opens, because the approach is different for each group.</p>`;
+  h += DATA.doors.map(g => `<div class="group">
+      <p class="group-label">${esc(g.group)} <span>— ${esc(g.note)}</span></p>` +
+      g.items.map(i => {
+        return `<div class="door">
+          <p class="dname">${link(i.name, i.url)}</p><p class="dhow">${esc(i.how)}</p>
+        </div>`;
+      }).join("") + `</div>`).join("");
+  h += `</section>`;
+
+  /* --- warm intros --- */
+  h += `<section>${secHead("05 / Warm", "Belmont advantages most students waste")}
+    <div class="rows">` +
+    DATA.warm.map(w => `<div class="row">
+      <div class="when">Belmont</div>
+      <div class="rbody"><p class="rtitle">${link(w.name, w.url)}</p><p class="rmeta">${esc(w.detail)}</p></div>
+      <span class="chip c-open">Free</span>
+    </div>`).join("") + `</div></section>`;
+
+  /* --- openings --- */
+  const src = DATA.openings_source;
+  h += `<section>${secHead("06 / Listings", "Posted openings worth a look", DATA.openings.length + " of " + src.total)}
+    <p class="note">Filtered to production, audio and entry-level from ${link(src.label, src.url)}, updated ${esc(fmtLong(src.updated))}. Each role title links straight to the application. Deliberately last on this page — see the note at the top.</p>
+    <div class="rows">` +
+    DATA.openings.map(o => `<div class="row">
+      <div class="when">${esc(fmt(o.posted))}</div>
+      <div class="rbody"><p class="rtitle">${link(o.role, o.url)}</p><p class="rmeta">${esc(o.org)} &nbsp;<em>${esc(o.cat)}</em></p></div>
+      <span class="chip ${daysTo(o.posted) > -30 ? "c-open" : "c-idle"}">${daysTo(o.posted) > -30 ? "Fresh" : "Aging"}</span>
+    </div>`).join("") + `</div></section>`;
+
+  document.getElementById("app").innerHTML = h;
+}
+render();
+</script>
+</body>
+</html>
