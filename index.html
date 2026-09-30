@@ -237,7 +237,7 @@ a{color:var(--signal)}
    Dates are ISO. Status vocabulary: new | emailed | replied | met | applied | dead
    ============================================================ */
 const DATA = {
-  refreshed: "2026-09-15",
+  refreshed: "2026-09-30",
 
   deadlines: [
     { date: "2026-10-30", label: "AES Show Nashville", detail: "Oct 30 – Nov 1, Gaylord Opryland Resort. Workshops, studio tours, research sessions, networking events.", url: "https://aesshow.com/", tag: "Register + ask about volunteer crew" },
@@ -255,9 +255,12 @@ const DATA = {
   ],
 
   signals: [
-    { headline: "Live Nation is staffing a new Nashville venue, The Truth, from scratch",
-      hook: "Twelve-plus roles posted together including Production Runner, Audio Tech, Video Tech, Stage Manager and Production Coordinator. A venue opening hires a whole crew at once and takes people with no venue history, which almost nothing else does.",
-      as_of: "2026-09-14" },
+    { headline: "The Truth, Live Nation's 4,400-cap Wedgewood-Houston venue, opens Oct 1",
+      hook: "Crew roles were posted all at once in August. Opening week is when a new house finds out where it is short-handed, so a runner or tech application landing now meets real need, not a full roster.",
+      as_of: "2026-09-28" },
+    { headline: "Covered Bridge Recording, a new immersive studio in Bellevue, is under a year old",
+      hook: "3,000 sq ft built around Dolby Atmos, run by its studio manager/engineer with partners. A young room with a small team has no runner pipeline yet, and Atmos experience is scarce enough to be worth learning at the source.",
+      as_of: "2026-09-10" },
     { headline: "AES brings its flagship show to Nashville Oct 30 – Nov 1",
       hook: "Conferences need local crew and local studios host tours during show week. Two separate ways in, both of which need asking now rather than in October.",
       as_of: "2026-09-15" },
@@ -350,30 +353,26 @@ const DATA = {
   ],
 
   openings: [
-    { role: "Production Runner — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Assistant--The-Truth_JR-92286-2" },
-    { role: "Audio Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Audio-Tech--The-Truth_JR-92314" },
-    { role: "Video Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Video-Tech--The-Truth_JR-92315" },
-    { role: "Production Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Coordinator--The-Truth_JR-92311" },
-    { role: "Stage Manager — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Stage-Manager--The-Truth_JR-92312-1" },
-    { role: "Backstage Experience Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-18",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Backstage-Experience-Coordinator--The-Truth_JR-92313" },
     { role: "Runner — Brooklyn Bowl Nashville", org: "Live Nation", cat: "Production", posted: "2026-09-08",
       url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Runner---Brooklyn-Bowl-Nashville_JR-92904" },
-    { role: "LN Concerts — Production Runner", org: "Live Nation", cat: "Production", posted: "2026-07-15",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/LN-Concerts--Production-Runner_JR-87377" },
-    { role: "Production Runner", org: "Live Nation", cat: "Production", posted: "2026-06-20",
-      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Runner_JR-49480" },
-    { role: "Coordinator, Production — The Merch Collective", org: "Sony Music", cat: "Production", posted: "2026-08-25",
+    { role: "Coordinator, Production — The Merch Collective", org: "Sony Music", cat: "Production", posted: "2026-08-24",
       url: "https://careers.sonymusic.com/jobs/8728599002" },
-    { role: "A&R Analyst", org: "Sony Music Nashville", cat: "A&R", posted: "2026-07-01",
-      url: "https://careers.sonymusic.com/jobs/8604918002" }
+    { role: "Production Runner — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Assistant--The-Truth_JR-92286-2" },
+    { role: "Audio Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Audio-Tech--The-Truth_JR-92314" },
+    { role: "Video Tech — The Truth", org: "Live Nation", cat: "Audio / Tech", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Video-Tech--The-Truth_JR-92315" },
+    { role: "Lighting Director — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Lighting-Director--The-Truth_JR-92318" },
+    { role: "Production Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Production-Coordinator--The-Truth_JR-92311" },
+    { role: "Stage Manager — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Stage-Manager--The-Truth_JR-92312-1" },
+    { role: "Backstage Experience Coordinator — The Truth", org: "Live Nation", cat: "Production", posted: "2026-08-17",
+      url: "https://livenation.wd503.myworkdayjobs.com/en-US/LNExternalSite/job/Nashville-TN-USA/Backstage-Experience-Coordinator--The-Truth_JR-92313" }
   ],
-  openings_source: { label: "HOME for Music Nashville job board", url: "https://homeformusic.org/nashville-music-industry-jobs", total: 53, updated: "2026-09-14" }
+  openings_source: { label: "HOME for Music Nashville job board", url: "https://homeformusic.org/nashville-music-industry-jobs", total: 55, updated: "2026-09-30" }
 };
 
 /* ============================================================
